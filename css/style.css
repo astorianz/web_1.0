@@ -7,6 +7,7 @@ body {
   background-color: linear-gradient(to right, rgb(218, 132, 230), rgb(71, 234, 245));
 }
 
+
 h1, h2, h3, h4, h5, h6 {
   color: #2B2D42;
   font-weight: 700;
@@ -239,8 +240,13 @@ textarea.input {
 \*----------------------------*/
 
 .section {
-  padding-top: 30px;
   padding-bottom: 30px;
+}
+ .top-heading{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: linear-gradient(to right, rgb(218, 132, 230), rgb(71, 234, 245));
+
 }
 
 .section-title {
@@ -391,16 +397,20 @@ textarea.input {
 \*----------------------------*/
 
 #header {
-  padding-top: 15px;
-  padding-bottom: 15px;
+
   background: linear-gradient(to right, rgb(218, 132, 230), rgb(71, 234, 245));
 /*   background-color: #696969 ;
 */}
 
 .header-logo {
   float: left;
+  margin-left: 5vw;
 }
 
+.logo{
+  border-radius: 100%;
+  max-width: 6vw ;
+}
 .header-logo .logo img {
   display: block;
   border-radius: 100%;
@@ -413,7 +423,43 @@ textarea.input {
 .header-search {
   padding: 15px 0px;
   margin-top: 10px;
+  margin-right: 17vw;
+}
 
+@media(max-width: 1280px){
+  .header-search{
+    margin-right: 15vw;
+  }
+}
+
+@media(max-width: 1240px){
+  .header-search{
+    margin-right: 13vw;
+  }
+}
+
+@media(max-width: 1160px){
+  .header-search{
+    margin-right: 11vw;
+  }
+}
+
+@media(max-width: 1110px){
+  .header-search{
+    margin-right: 9vw;
+  }
+}
+
+@media(max-width: 1060px){
+  .header-search{
+    margin-right: 7vw;
+  }
+}
+
+@media(max-width: 1000px){
+  .header-search{
+    margin-right: 5vw;
+  }
 }
 
 .header-search form {
@@ -435,6 +481,8 @@ textarea.input {
   width: 100px;
   /* background: #D10024;
   color: #FFF; */
+  margin: 0;
+  padding: 0;
   font-weight: 700;
   border: none;
   border-radius: 0px 40px 40px 0px;
@@ -1163,8 +1211,8 @@ textarea.input {
   -webkit-transform: none;
   -ms-transform: none;
   transform: none;
-  width: 20px;
-  height: 20px;
+  width: 100%;
+  height: auto;
   display: inline-block !important;
   margin: 0px 2px;
 }
